@@ -1,21 +1,30 @@
-const display = document.getElementById("display");
+function calculateGrade() {
+  const math = parseInt(document.getElementById("math").value) || 0;
+  const science = parseInt(document.getElementById("science").value) || 0;
+  const english = parseInt(document.getElementById("english").value) || 0;
+  const computer = parseInt(document.getElementById("computer").value) || 0;
+  const history = parseInt(document.getElementById("history").value) || 0;
 
-function appendValue(value) {
-  display.value += value;
-}
+  const total = math + science + english + computer + history;
+  const percentage = (total / 500) * 100;
 
-function clearDisplay() {
-  display.value = "";
-}
+  let grade;
+  let gradeClass;
 
-function deleteLast() {
-  display.value = display.value.slice(0, -1);
-}
+  if (percentage >= 90) { grade = "A+"; gradeClass = "Aplus"; }
+  else if (percentage >= 80) { grade = "A"; gradeClass = "A"; }
+  else if (percentage >= 70) { grade = "B"; gradeClass = "B"; }
+  else if (percentage >= 60) { grade = "C"; gradeClass = "C"; }
+  else if (percentage >= 50) { grade = "D"; gradeClass = "D"; }
+  else { grade = "F"; gradeClass = "F"; }
 
-function calculate() {
-  try {
-    display.value = eval(display.value);
-  } catch {
-    display.value = "Error";
-  }
+  const resultBox = document.getElementById("result");
+  resultBox.style.display = "block";
+  resultBox.className = "result " + gradeClass;
+
+  resultBox.innerHTML = `
+    <p><strong>Total Marks:</strong> ${total} / 500</p>
+    <p><strong>Percentage:</strong> ${percentage.toFixed(2)}%</p>
+    <p><strong>Grade:</strong> ${grade}</p>
+  `;
 }
