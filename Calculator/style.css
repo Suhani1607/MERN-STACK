@@ -1,0 +1,94 @@
+/* General styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+  width: 320px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Display screen */
+#display {
+  width: 93%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #f8fafc;
+  color: #111827;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Button styling */
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e2e8f0;
+  color: #1e293b;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #cbd5e1;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Special buttons */
+.clear {
+  background: #f87171;
+  color: white;
+}
+
+.clear:hover {
+  background: #ef4444;
+}
+
+.del {
+  background: #fbbf24;
+  color: white;
+}
+
+.del:hover {
+  background: #f59e0b;
+}
+
+.equal {
+  background: #3b82f6;
+  color: white;
+  grid-row: span 2; /* taller button */
+}
+
+.equal:hover {
+  background: #2563eb;
+}
+
+.zero {
+  grid-column: span 2; /* wider button */
+}
