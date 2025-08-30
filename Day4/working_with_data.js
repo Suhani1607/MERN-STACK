@@ -9,4 +9,4 @@ const showSkills=skills.map(skill=>
     `${skill.Name}(${skill.proficiency})`
 )
 
-console.log(showSkills);
+console.log(showSkills)
