@@ -1,0 +1,62 @@
+body{
+  margin:0;
+  display:grid;
+  place-items:center;
+  min-height:100vh;
+  background-image: url("https://images.pexels.com/photos/1421903/pexels-photo-1421903.jpeg");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+  font-family: system-ui, sans-serif;
+  color:white;
+}
+
+.card{
+  width:min(720px, 92vw);
+  padding: 30px 50px;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,0.027);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-left: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+}
+
+.app-title{
+  margin:0 0 12px;
+  font-size:24px;
+  font-weight:700;
+}
+
+.quote{
+  font-size:22px;
+  font-weight:500;
+  margin:0;
+}
+
+.author{
+  margin-top:8px;
+  font-style:italic;
+  color:red;
+}
+
+.controls{
+  display:flex;
+  gap:10px;
+  margin-top:18px;
+}
+
+.btn{
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.primary{
+      background: linear-gradient(135deg,rgba(111,66,193,0.85),rgb(245, 84, 111),rgba(111,66,193,0.85));
+  color:white;
+  font-weight:600;
+}
+
+
