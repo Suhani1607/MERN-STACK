@@ -1,8 +1,8 @@
 const express=require('express');
 const app=express();
-const port=2000;
+const port=2000
 
-app.use(express.json());
+app.use(express.json())
 app.get('/',(req,res)=>{
     return res.json({message:`API is running With port :  ${port}`});
 })
