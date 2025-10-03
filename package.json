@@ -1,0 +1,23 @@
+{
+  "name": "mern_stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suhani1607/MERN-STACK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suhani1607/MERN-STACK/issues"
+  },
+  "homepage": "https://github.com/Suhani1607/MERN-STACK#readme",
+  "dependencies": {
+    "mongodb": "^6.20.0"
+  }
+}
